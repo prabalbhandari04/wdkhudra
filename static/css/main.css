@@ -1,0 +1,729 @@
+body{
+	background-color: black;
+}
+
+
+
+.navbar{
+    height:100px;
+}
+
+#brand{
+    color: black;
+    text-decoration: none;
+    font-size:300%;
+}
+
+#navbarSupportedContent{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.thumbnail{
+	width: 100%;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px white;
+    -moz-box-shadow: -1px -3px 5px -2px white;
+    box-shadow: -1px -3px 5px -2px white;
+}
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+
+.bg-dark{
+    background:white;
+}
+#login{
+    height :40px;
+    width :80px;
+    margin-right:30px;;
+    color:white;
+    text-align: center;
+    font-size:25px;
+    
+
+}
+#login:hover{
+    transform: scale(1.1);
+    color:white;
+    border: 1px solid rgb(3, 3, 34);
+    border-radius:24px;
+    background: rgb(3, 3, 34);
+    text-decoration:none;
+}
+#cart-icon{
+	width:40px;
+    height:40px;
+	display: inline-block;
+}
+
+#cart-total{
+    margin-right:35px;
+	display: block;
+	text-align: center;
+	color:rgb(3, 3, 34);
+	background-color: rgb(16, 168, 206);
+	width: 20px;
+	height: 25px;
+	border-radius:50%;
+	font-size: 14px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 100px;
+}
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+	
+
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+
+
+.hidden{
+	display: none!important;
+}
+
+
+.col-lg-4 img:hover{
+	transform:scale(1.1);
+}
+
+
+#category{
+    border:none;
+    text-align: center;
+    font-size:25px;
+    margin-right:30px;
+    color:white;
+    background-color: transparent;
+}
+
+#category:hover{
+    transform: scale(1.1);
+    color:white;
+    border: 1px solid rgb(3, 3, 34);
+    border-radius:24px;
+    background: rgb(3, 3, 34);;
+    text-decoration:none;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:10px;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.word {
+    margin: auto;
+    color: rgb(7, 7, 85);
+    font-size:15px ;
+  }
+
+/* reflective 3d card thing */
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    transform-style: preserve-3d;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: silver;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container .box::before {
+    content: 'BUY';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    color: black;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box::after {
+    content: 'NOW';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color:black;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity: 0.04;
+}
+
+.container .box .name {
+    position: absolute;
+    top:50px;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .name
+{
+    opacity: 1;
+}
+
+.container .box .buy
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform:translate3d(-50%,0,75px);
+    color: black;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy
+{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box .circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity:0.7;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box .product
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    max-width: 300px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(1deg);
+}
+
+.container .box .price
+{
+    position: absolute;
+    top:62px;
+    left:40px; 
+    max-width: 300px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(1deg);
+}
+
+.container .box:hover .product
+{
+    transform: translate3d(-50%,-50%,100px) rotate(10deg);
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy
+{
+    background:white;
+    
+}
+
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy
+{
+    background:white;
+}
+
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy
+{
+    background:white;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:300px;
+    transform-style: preserve-3d;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: silver;  
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container .box::before {
+    content: 'BUY';
+    position: absolute;
+    top:30px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    color:black; 
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.container .box::after {
+    content: 'NOW';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: black;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity:0.7;
+}
+
+.container .box .name {
+    position: absolute;
+    top:50px;
+    left: 0;
+    text-align: center;
+    color: black;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 10;
+}
+
+.container .box:hover .name
+{
+    opacity: 1;
+}
+
+.container .box .buy
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform:translate3d(-50%,0,75px);
+    color: black;
+    background: grey;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy
+{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box .circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    opacity:0.7;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box .product
+{
+    position: absolute;
+    top: 50%;
+    left:50%; 
+    max-width: 300px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(1deg);
+}
+
+.container .box .price
+{
+    position: absolute;
+    top:62px;
+    left:40px; 
+    max-width: 300px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(1deg);
+}
+
+.container .box:hover .product
+{
+    transform: translate3d(-50%,-50%,100px) rotate(10deg);
+}
+
+
+.container .box:hover .buy
+{
+    bottom: 30px;
+    opacity: 1;
+}
+
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy
+{
+    background: silver;
+    
+}
+
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy,
+.container .box:nth-child(2) .price
+{
+    background: silver;
+    
+}
+
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy
+{
+    background: silver;
+}
+
+
+
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+
+nav {
+    width: 100%;
+    height: 60px;
+    padding: 20px 10vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+nav .brand{
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+}
+
+nav .link{
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: -25vw;
+}
+
+nav .link ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav .link ul li{
+    padding: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+nav .toggle-btn{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+}
+
+nav .toggle-btn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+nav .toggle-btn span:nth-child(1){
+    top: 30%;
+}
+
+nav .toggle-btn span:nth-child(3){
+    top: 70%;
+}
+
+.main-body,
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(170, 48, 48);
+    transition: .5s;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header .content{
+    position: relative;
+}
+
+.header .content .heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: center;
+}
+
+.header .content p{
+    color: #fff;
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.header .content .btn{
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 16px;
+    display: block;
+    margin: 40px auto 0;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.header .content .btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+nav .toggle-btn.active span:nth-child(1){
+    top: 80%;
+    left: 40%;
+    transform: rotate(45deg) translate(-50%, -50%);
+}
+
+nav .toggle-btn.active span:nth-child(2){
+    opacity: 0;
+}
+
+nav .toggle-btn.active span:nth-child(3){
+    top: 25%;
+    left: 45%;
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.header.skew{
+    transform: rotateY(45deg) scale(0.6);
+}
+
+.header.skew::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: rotateY(45deg) scale(0.9);
+    z-index: -2;
+}
+
+.header.skew::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -35%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: rotateY(45deg) scale(0.8);
+    z-index: -2;
+}
+
+nav .link.active{
+    right: 0;
+}
+
+nav .link ul li:hover{
+    transform: scale(1.3);
+}
+  
+
+  
+
